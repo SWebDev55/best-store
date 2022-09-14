@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header w-full bg-green-500">
+        <div class="main-box max-w-5xl m-auto flex justify-between items-center py-2">
+            <div class="logo text-3xl text-white font-bold">BEST-STORE</div>
+            <div onclick="openNav()" class="open-menu flex justify-center items-center text-white font-bold text-2xl hidden">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="menu" id="myNav">
+                <div onclick="closeNav()" class="close-menu closebtn flex justify-center items-center text-white font-bold text-2xl hidden">
+                    <i class="fa fa-times"></i>
+                </div>
+                <ul class="m-0 p-0">
+                    <li class="inline-block"><a href="#" class="block text-md text-white font-bold px-5 py-2 rounded-full hover:bg-green-700">Home</a></li>
+                    <li class="inline-block"><a href="#" class="block text-md text-white font-bold px-5 py-2 rounded-full hover:bg-green-700">Product</a></li>
+                    <li class="inline-block"><a href="#" class="block text-md text-white font-bold px-5 py-2 rounded-full hover:bg-green-700">About</a></li>
+                    <li class="inline-block"><a href="#" class="block text-md text-white font-bold px-5 py-2 rounded-full hover:bg-green-700">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="./img/banner-1.jpg" alt="">
+        <div class="detail-banner max-w-xl bg-white p-10 rounded-xl">
+            <p class="text-center text-md text-green-500 font-bold">Say Hello to BEST-STORE</p>
+            <h1 class="text-3xl text-center font-bold text-black py-10">Free Ecommerce Template for Webflow</h1>
+            <div class="text w-40 m-auto">
+                <a href="#" class="text-white text-center bg-green-500 rounded-full p-4">Open Catalog</a>
+            </div>
+        </div>
+    </div>
+    <div class="blog-detail max-w-6xl m-auto">
+        <div class="main-box-blog-detail flex justify-between items-center p-5">
+            <div class="left-box w-1/2 pt-8" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <div class="box flex justify-between items-center bg-yellow-500 rounded-xl mx-5">
+                    <img src="./img/1.png" alt="" class="w-48">
+                    <div class="box-text pr-10">
+                        <h1 class="text-3xl text-white pb-10">Stuffed Animals</h1>
+                        <a href="#" class="p-2 bg-white text-black text-center rounded-full">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-box w-1/2 pt-8" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <div class="box flex justify-between items-center bg-pink-500 rounded-xl mx-5">
+                    <div class="box-text pl-10">
+                        <h1 class="text-3xl text-white pb-10">Wooden Toys</h1>
+                        <a href="#" class="p-2 bg-white text-black text-center rounded-full">Shop Now</a>
+                    </div>
+                    <img src="./img/2.png" alt="" class="w-48">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-post-1 max-w-6xl m-auto p-10">
+        <h1 class="text-3xl text-gray-800 border-b-2 border-green-600 py-2">Stuffed Animals</h1>
+        <div class="row-start my-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-3 shadow p-5 rounded-xl" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <img src="./img/1.png" alt="" class="w-56">
+                    <p class="text-center py-2 text-lg">Teddy Bear</p>
+                    <div class="text-center">
+                        <a href="#" class="bg-green-500 px-3 py-1 rounded-full text-white">$ 20.00 US</a>
+                    </div>
+                </div>
+                <div class="col-span-3 shadow p-5 rounded-xl" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <img src="./img/3.png" alt="" class="w-56">
+                    <p class="text-center py-2 text-lg">Mega Plush Toy</p>
+                    <div class="text-center">
+                        <a href="#" class="bg-green-500 px-3 py-1 rounded-full text-white">$ 15.00 US</a>
+                    </div>
+                </div>
+                <div class="col-span-3 shadow p-5 rounded-xl" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <img src="./img/4.png" alt="" class="w-56">
+                    <p class="text-center py-2 text-lg">Cute Dog</p>
+                    <div class="text-center">
+                        <a href="#" class="bg-green-500 px-3 py-1 rounded-full text-white">$ 30.00 US</a>
+                    </div>
+                </div>
+                <div class="col-span-3 shadow p-5 rounded-xl" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <img src="./img/6.png" alt="" class="w-56">
+                    <p class="text-center py-2 text-lg">Little Friend</p>
+                    <div class="text-center">
+                        <a href="#" class="bg-green-500 px-3 py-1 rounded-full text-white">$ 40.00 US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-post-2 max-w-6xl m-auto p-10">
+        <h1 class="text-3xl text-gray-800 border-b-2 border-green-600 py-2">Wooden Toys</h1>
+        <div class="row-start my-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-3 shadow p-5 rounded-xl" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <img src="./img/2.png" alt="" class="w-56">
+                    <p class="text-center py-2 text-lg">Happy Flower</p>
+                    <div class="text-center">
+                        <a href="#" class="bg-green-500 px-3 py-1 rounded-full text-white">$ 20.00 US</a>
+                    </div>
+                </div>
+                <div class="col-span-3 shadow p-5 rounded-xl" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <img src="./img/8.png" alt="" class="w-56">
+                    <p class="text-center py-2 text-lg">Lift Machine</p>
+                    <div class="text-center">
+                        <a href="#" class="bg-green-500 px-3 py-1 rounded-full text-white">$ 15.00 US</a>
+                    </div>
+                </div>
+                <div class="col-span-3 shadow p-5 rounded-xl" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <img src="./img/9.png" alt="" class="w-56">
+                    <p class="text-center py-2 text-lg">Wooden Camera</p>
+                    <div class="text-center">
+                        <a href="#" class="bg-green-500 px-3 py-1 rounded-full text-white">$ 30.00 US</a>
+                    </div>
+                </div>
+                <div class="col-span-3 shadow p-5 rounded-xl" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <img src="./img/7.png" alt="" class="w-56">
+                    <p class="text-center py-2 text-lg">Little Rabbit</p>
+                    <div class="text-center">
+                        <a href="#" class="bg-green-500 px-3 py-1 rounded-full text-white">$ 40.00 US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-post-3 max-w-6xl m-auto p-10">
+        <p class="text-green-500 text-center">@Elastic Themes</p>
+        <h1 class="text-3xl text-gray-800 py-2 text-center">We're on Instagram!</h1>
+        <div class="row-start my-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-2 rounded-xl" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <a href="#"><img src="./img/1.jpg" alt="" class="w-full rounded-xl"></a>
+                </div>
+                <div class="col-span-2 rounded-xl" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <a href="#"><img src="./img/2.jpg" alt="" class="w-full rounded-xl"></a>
+                </div>
+                <div class="col-span-2 rounded-xl" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <a href="#"><img src="./img/3.jpg" alt="" class="w-full rounded-xl"></a>
+                </div>
+                <div class="col-span-2 rounded-xl" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <a href="#"><img src="./img/4.jpg" alt="" class="w-full rounded-xl"></a>
+                </div>
+                <div class="col-span-2 rounded-xl" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <a href="#"><img src="./img/5.jpg" alt="" class="w-full rounded-xl"></a>
+                </div>
+                <div class="col-span-2 rounded-xl" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <a href="#"><img src="./img/6.jpg" alt="" class="w-full rounded-xl"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-green-600">
+        <div class="main-box max-w-6xl m-auto flex justify-between items-center border-b-2 py-5">
+            <div class="logo text-2xl text-white">BEST-STORE</div>
+            <div class="social">
+                <a href="#"><i class="text-white text-xl px-2 fab fa-facebook"></i></a>
+                <a href="#"><i class="text-white text-xl px-2 fab fa-instagram"></i></a>
+                <a href="#"><i class="text-white text-xl px-2 fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="main-text-footer max-w-6xl m-auto flex justify-between items-center py-5">
+            <div class="logo text-sm text-white">Created with love by Elastic Themes</div>
+            <div class="link">
+                <a href="#" class="text-sm text-white">Powered by Webflow</a>
+                <span class="text-md text-white">|</span>
+                <a href="#" class="text-sm text-white">Style Guide</a>
+                <span class="text-md text-white">|</span>
+                <a href="#" class="text-sm text-white">Licensing</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
